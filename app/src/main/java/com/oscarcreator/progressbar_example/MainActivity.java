@@ -11,7 +11,6 @@ import com.oscarcreator.roundsideprogressbar.DividedRoundSideProgressBar;
 
 public class MainActivity extends AppCompatActivity {
 
-    //TODO git config user.name user.email
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
