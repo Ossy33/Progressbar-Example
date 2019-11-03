@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:background="@color/surfaceBackground"
+    android:paddingBottom="10dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <com.oscarcreator.roundsideprogressbar.DividedRoundSideProgressBar
+                android:id="@+id/pb"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp"
+                app:dividerColor="@color/colorPrimaryDark"
+                app:dividers="0"
+                app:maxProgress="100"
+                app:outlineColor="@color/colorPrimary"
+                app:progressBackgroundColor="@color/colorBlueLight"
+                app:progressColor="@color/colorBlue"
+                tools:dividers="10"
+                tools:outlineWidth="10dp"
+                tools:progress="30" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Outline width" />
+
+            <SeekBar
+                android:id="@+id/sb_outline"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:max="50" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dividers" />
+
+            <SeekBar
+                android:id="@+id/sb_dividers"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:max="20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Progress" />
+
+            <SeekBar
+                android:id="@+id/sb_progress"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:max="100" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
